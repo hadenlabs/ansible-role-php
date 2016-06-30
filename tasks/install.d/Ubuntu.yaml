@@ -13,6 +13,6 @@
 
 - name: Install php dependencies
   apt: name={{ item }} state=present update_cache=yes
-  with_items: php_packages
+  with_items: _php_packages
   tags:
     - php
