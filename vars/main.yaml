@@ -3,14 +3,28 @@
 # vars file for hadenlabs.php
 
 # _hadenlabs.php_create_files:
-  
 #   - path: "{{ _path_dir }}"
 #     state: "directory"
 #     # group: "root"
 #     owner: "{{ user }}"
-  
 
-_hadenlabs.php:
-  templates:
-    - src: "default.j2"
-      dest: {{ _hadenlabs.php_file }}
+_php_package_dependencies:
+  - build-essential
+  - curl
+  - python-software-properties
+  - software-properties-common
+
+_php_repositories_packages:
+  - "ppa:ondrej/php5-5.6"
+
+_php_packages:
+  - php5
+
+_php_modules_defaults:
+  - "php5-cli"
+  - "php5-dev"
+
+# _hadenlabs.php:
+#   templates:
+#     - src: "default.j2"
+#       dest: {{ _hadenlabs.php_file }}
