@@ -9,9 +9,20 @@
 #     owner: "{{ user }}"
 
 _php_package_dependencies:
+  - build-essential
   - curl
   - python-software-properties
   - software-properties-common
+
+_php_repositories_packages:
+  - "ppa:ondrej/php5-5.6"
+
+_php_packages:
+  - php5
+
+_php_modules_defaults:
+  - "php5-cli"
+  - "php5-dev"
 
 # _hadenlabs.php:
 #   templates:
