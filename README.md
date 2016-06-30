@@ -30,6 +30,8 @@ Here is the list of all variables and their default values:
 ```yaml
     ---
     # defaults file for hadenlabs.php
+    php_version: 5.6
+    php_modules: []
 ```
 
 
@@ -47,8 +49,11 @@ To run this playbook with default settings, create a basic playbook like this:
     - hosts: servers
       roles:
         - hadenlabs.php
-```
+          php_version: 5.6
+          php_modules:
+            - php5-cli
 
+```
 
 ## License
 
