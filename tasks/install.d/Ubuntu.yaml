@@ -6,11 +6,13 @@
   apt:
     update_cache: yes
 
+- name: add package repositories
+  apt_repository: repo={{ item }}
+  with_items: _php_repositories_packages
+  when: _php_repositories_packages
 
 - name: Install php dependencies
-  
   apt: name={{ item }} state=present update_cache=yes
-  
   with_items: php_packages
   tags:
     - php
