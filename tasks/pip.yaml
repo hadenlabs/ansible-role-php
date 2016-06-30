@@ -1,0 +1,10 @@
+---
+# task for hadenlabs.php
+
+- name: Install packages via pip php
+  sudo: yes
+  
+  pip: name="{{ item.name }}" version="{{ item.version }}"
+  
+  when: php_pip_dependencies is defined
+  with_items: php_pip_dependencies

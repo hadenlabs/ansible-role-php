@@ -1,0 +1,11 @@
+---
+# task for hadenlabs.php
+
+- name: copy templates
+  template:
+  
+    src: "{{ item.src }}"
+    dest: "{{ item.dest }}"
+  
+  with_items: _php.templates
+  when: _php.templates is defined

@@ -1,29 +1,36 @@
-# Ansible Role PHP
+# Ansible Role anisble-role-php
 
 <span class="badges" align="center">
-[![Build Status](https://travis-ci.org/dgnest/ansible-role-php.svg)](https://travis-ci.org/dgnest/ansible-role-php)
-[![Stories in Ready](https://badge.waffle.io/dgnest/ansible-role-php.svg?label=ready&title=Ready)](http://waffle.io/dgnest/ansible-role-php)
-[![GitHub issues](https://img.shields.io/github/issues/hadenlabs/ansible-role-php.svg)](https://github.com/hadenlabs/ansible-role-php/issues)
+[![Build Status](https://travis-ci.org/hadenlabs/anisble-role-php.svg)](https://travis-ci.org/hadenlabs/anisble-role-php)
+[![Stories in Ready](https://badge.waffle.io/hadenlabs/anisble-role-php.svg?label=ready&title=Ready)](http://waffle.io/hadenlabs/anisble-role-php)
+[![GitHub issues](https://img.shields.io/github/issues/hadenlabs/anisble-role-php.svg)](https://github.com/hadenlabs/anisble-role-php/issues)
 [![GitHub license](https://img.shields.io/github/license/mashape/apistatus.svg?style=flat-square)](LICENSE)
 </span>
 
 
-Installs and configures [php][link-php] on a host.
+This Ansible Role infuses antigravity, you are warned
 
-## Requirements
+Install it with the following command:
 
- - Linux
-   - none
- - OSX
-   - [Homebrew][link-brew] must be installed.
+```bash
+$ ansible-galaxy install hadenlabs.php
+
+```
+Requirements
+------------
+
+None
+
 
 
 ## Role Variables
 
-The default role variables in `defaults/main.yml` are:
+Here is the list of all variables and their default values:
 
+```yaml
     ---
-    # defaults file for php
+    # defaults file for hadenlabs.php
+```
 
 
 ## Dependencies
@@ -36,16 +43,16 @@ See the [examples](./examples/) directory.
 
 To run this playbook with default settings, create a basic playbook like this:
 
+```yaml
     - hosts: servers
       roles:
-         - php
+        - hadenlabs.php
+```
 
-To install a specific version:
 
-    - hosts: servers
-      roles:
-         - { role: hadenlabs.php }
+## License
 
+MIT
 
 ## Changelog
 
@@ -57,13 +64,14 @@ Please see [CONTRIBUTING](CONTRIBUTING.md) for details.
 
 ## Credits
 
-- [Luis Mayta][link-author]
+- [author][link-author]
 - [All Contributors][link-contributors]
 
-[link-php]: https://php.net/
-[link-brew]: http://brew.sh/
+
+---
+Copyright © 2016, hadenlabs
 
 <!-- Other -->
 
 [link-author]: https://github.com/luismayta
-[link-contributors]: AUTHORS
+[link-contributors]: contributors

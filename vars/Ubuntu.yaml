@@ -1,0 +1,5 @@
+---
+# vars file for hadenlabs.php (Ubuntu specific)
+
+_php_package_dependencies:
+  - build-essential

@@ -1,0 +1,16 @@
+---
+
+# task file for hadenlabs.php
+
+- name: Ensure apt cache is up to date
+  apt:
+    update_cache: yes
+
+
+- name: Install php dependencies
+  
+  apt: name={{ item }} state=present update_cache=yes
+  
+  with_items: php_packages
+  tags:
+    - php
