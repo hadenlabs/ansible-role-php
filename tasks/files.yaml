@@ -1,0 +1,13 @@
+---
+# environment file for hadenlabs.php
+
+- name: Create files php
+  sudo: yes
+  file:
+  
+    path: "{{ item.path }}"
+    state: "{{ item.state }}"
+    owner: "{{ item.owner }}"
+  
+  with_items: _php_create_files
+  when: _php_create_files is defined
