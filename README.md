@@ -32,6 +32,7 @@ Here is the list of all variables and their default values:
     # defaults file for hadenlabs.php
     php_version: 5.6
     php_modules: []
+    php_pecl_extensions: []
 ```
 
 
@@ -52,7 +53,9 @@ To run this playbook with default settings, create a basic playbook like this:
           php_version: 5.6
           php_modules:
             - php5-cli
-
+          php_pecl_extensions:
+          - xdebug
+          - zendopcache
 ```
 
 ## License

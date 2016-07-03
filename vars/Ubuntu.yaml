@@ -12,6 +12,8 @@ _php_repositories_packages:
 
 _php_packages:
   - php5
+  - php-pear
+  - php5-dev
 
 _php_modules_defaults:
   - "php5-cli"
