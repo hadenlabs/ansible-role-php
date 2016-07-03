@@ -3,3 +3,4 @@
 
 php_version: 5.6
 php_modules: []
+php_pecl_extensions: []
