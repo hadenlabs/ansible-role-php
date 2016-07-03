@@ -26,8 +26,8 @@
     -   id: debug-statements
     -   id: requirements-txt-fixer
     -   id: name-tests-test
--   repo: git://github.com/pre-commit/mirrors-pylint
-    sha: 029186c31774c24af446c428eafc59ce8980dcb9
+-   repo: git://github.com/dgnest/mirrors-pylint
+    sha: eb20a4b9bbfe24ec8641f63214e2a7de25399796
     hooks:
     -   id: pylint
         args:
