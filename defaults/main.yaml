@@ -3,4 +3,5 @@
 
 php_version: 5.6
 php_modules: []
+php_packages_dependences: []
 php_pecl_extensions: []
