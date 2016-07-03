@@ -35,15 +35,15 @@
     - apt
     - dependences
 
-- name: Install php dependencies
+- name: Install php dependences
   sudo: yes
   apt:
     name: "{{ item.name }}"
     state: present
-  register: install_php_dependencies
-  when: php_dependencies is defined
-  with_items: php_dependencies
+  register: install_php_dependences
+  when: php_dependences is defined
+  with_items: php_dependences
   tags:
     - apt
-    - dependencies
-- debug: var=install_php_dependencies.stdout_lines
+    - dependences
+- debug: var=install_php_dependences.stdout_lines
