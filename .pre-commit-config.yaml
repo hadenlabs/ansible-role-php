@@ -31,8 +31,7 @@
     hooks:
     -   id: pylint
         args:
-        - --rcfile=.pylintrc
-        exclude: setup.py
+        - --rcfile=pylint.rc
 -   repo: git://github.com/pre-commit/mirrors-scss-lint
     sha: master
     hooks:
