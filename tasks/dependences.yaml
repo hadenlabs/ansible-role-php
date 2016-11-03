@@ -11,28 +11,39 @@
     - apt
     - update_cache
 
-- name: Install php package dependencies
+- name: Install php package private dependences
   sudo: yes
   apt:
     name: "{{ item }}"
     state: present
-  register: install_php_package_dependencies
-  with_items: _php_package_dependencies
-  when: _php_package_dependencies is defined
+  register: install_php_private_package_dependences
+  with_items: _php_package_dependences
+  when: _php_package_dependences is defined
   tags:
     - apt
-    - dependencies
-- debug: var=install_php_package_dependencies.stdout_lines
+    - dependences
 
-- name: Install php dependencies
+- name: Install php package dependences
+  sudo: yes
+  apt:
+    name: "{{ item }}"
+    state: present
+  register: install_php_package_dependences
+  with_items: php_package_dependences
+  when: php_package_dependences is defined
+  tags:
+    - apt
+    - dependences
+
+- name: Install php dependences
   sudo: yes
   apt:
     name: "{{ item.name }}"
     state: present
-  register: install_php_dependencies
-  when: php_dependencies is defined
-  with_items: php_dependencies
+  register: install_php_dependences
+  when: php_dependences is defined
+  with_items: php_dependences
   tags:
     - apt
-    - dependencies
-- debug: var=install_php_dependencies.stdout_lines
+    - dependences
+- debug: var=install_php_dependences.stdout_lines
