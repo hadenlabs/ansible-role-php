@@ -18,5 +18,5 @@ _php_packages:
   - -dev
 
 _php_modules_defaults:
-  - "-cli"
-  - "-dev"
+  - -cli
+  - -dev
