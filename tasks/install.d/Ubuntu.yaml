@@ -11,14 +11,13 @@
   with_items: _php_repositories_packages
   when: _php_repositories_packages
 
-- name: Install php dependences
-  apt: name="{{ item }}{{ php_version }}" state=present update_cache=yes
-  with_items: _php_packages_name
+- name: Install version php
+  apt: name="{{ _php }}" state=present update_cache=yes
   tags:
     - php
 
 - name: Install php dependences
-  apt: name="php-{{ item }}{{ php_version }}" state=present update_cache=yes
+  apt: name="{{ _php }}-{{ item }}" state=present update_cache=yes
   with_items: _php_packages
   tags:
     - php

@@ -2,7 +2,7 @@
 # task for hadenlabs.php
 
 - name: Install php modules by default
-  apt: name="php-{{ item }}{{ php_version }}" state=present update_cache=yes
+  apt: name="{{ _php }}-{{ item }}" state=present update_cache=yes
   with_items: _php_modules_defaults
   when: _php_modules_defaults is defined
   tags:
