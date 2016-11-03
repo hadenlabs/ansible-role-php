@@ -10,13 +10,10 @@ _php_package_dependences:
 _php_repositories_packages:
   - "ppa:ondrej/php"
 
-_php_packages_name:
-  - php-
-
 _php_packages:
-  - -pear
-  - -dev
+  - pear
+  - dev
 
 _php_modules_defaults:
-  - -cli
-  - -dev
+  - cli
+  - dev
