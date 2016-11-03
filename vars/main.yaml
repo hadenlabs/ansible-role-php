@@ -15,14 +15,17 @@ _php_package_dependences:
   - software-properties-common
 
 _php_repositories_packages:
-  - "ppa:ondrej/php5-5.6"
+  - "ppa:ondrej/php"
+
+_php_packages_name:
+  - php
 
 _php_packages:
-  - php5
+  - php
 
 _php_modules_defaults:
-  - "php5-cli"
-  - "php5-dev"
+  - "-cli"
+  - "-dev"
 
 # _hadenlabs.php:
 #   templates:

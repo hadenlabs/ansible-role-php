@@ -1,20 +1,22 @@
 ---
 # vars file for hadenlabs.php (Ubuntu specific)
 
-_php_package_dependencies:
+_php_package_dependences:
   - build-essential
   - curl
   - python-software-properties
   - software-properties-common
 
 _php_repositories_packages:
-  - "ppa:ondrej/php5-5.6"
+  - "ppa:ondrej/php"
+
+_php_packages_name:
+  - php-
 
 _php_packages:
-  - php5
-  - php-pear
-  - php5-dev
+  - -pear
+  - -dev
 
 _php_modules_defaults:
-  - "php5-cli"
-  - "php5-dev"
+  - "-cli"
+  - "-dev"
