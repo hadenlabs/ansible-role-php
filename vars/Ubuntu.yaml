@@ -1,6 +1,8 @@
 ---
 # vars file for hadenlabs.php (Ubuntu specific)
 
+_php_version: "php{{ php_version }}"
+
 _php_package_dependences:
   - build-essential
   - curl
@@ -11,9 +13,8 @@ _php_repositories_packages:
   - "ppa:ondrej/php"
 
 _php_packages:
-  - pear
   - dev
 
 _php_modules_defaults:
-  - cli
-  - dev
+  - "{{ _php_version }}-cli"
+  - "{{ _php_version }}-dev"
