@@ -13,7 +13,7 @@ _php_repositories_packages:
   - "ppa:ondrej/php"
 
 _php_packages:
-  - dev
+  - "{{ _php_version }}-dev"
 
 _php_modules_defaults:
   - "{{ _php_version }}-cli"
