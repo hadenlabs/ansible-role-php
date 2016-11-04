@@ -1,6 +1,7 @@
 # Ansible Role PHP
 
 <span class="badges" align="center">
+[![GitHub tag](https://img.shields.io/github/tag/hadenlabs/ansible-role-php.svg?maxAge=2592000)](https://github.com/hadenlabs/ansible-role-php)
 [![Build Status](https://travis-ci.org/hadenlabs/anisble-role-php.svg)](https://travis-ci.org/hadenlabs/anisble-role-php)
 [![GitHub license](https://img.shields.io/github/license/mashape/apistatus.svg?style=flat-square)](LICENSE)
 </span>
@@ -24,7 +25,7 @@ Here is the list of all variables and their default values:
 ```yaml
     ---
     # defaults file for hadenlabs.php
-    php_version: 7
+    php_version: 7.0
     php_modules: []
     php_pecl_extensions: []
 ```
@@ -44,9 +45,9 @@ To run this playbook with default settings, create a basic playbook like this:
     - hosts: servers
       roles:
         - hadenlabs.php
-          php_version: 7
+          php_version: 7.0
           php_modules:
-            - php5-cli
+            - php7.0-cli
           php_pecl_extensions:
           - xdebug
           - zendopcache
