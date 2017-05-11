@@ -1,9 +1,7 @@
 # Ansible Role PHP
 
-<span class="badges" align="center">
 [![Build Status](https://travis-ci.org/hadenlabs/anisble-role-php.svg)](https://travis-ci.org/hadenlabs/anisble-role-php)
 [![GitHub license](https://img.shields.io/github/license/mashape/apistatus.svg?style=flat-square)](LICENSE)
-</span>
 
 
 ```bash
@@ -28,7 +26,6 @@ Here is the list of all variables and their default values:
     php_modules: []
     php_pecl_extensions: []
 ```
-
 
 ## Dependencies
 
@@ -72,8 +69,6 @@ Please see [CONTRIBUTING](CONTRIBUTING.md) for details.
 
 ---
 Copyright © 2016, hadenlabs
-
-<!-- Other -->
 
 [link-author]: https://github.com/luismayta
 [link-contributors]: contributors
