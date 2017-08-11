@@ -1,19 +1,22 @@
 # Ansible Role PHP
 
-<span class="badges" align="center">
-[![Build Status](https://travis-ci.org/hadenlabs/anisble-role-php.svg)](https://travis-ci.org/hadenlabs/anisble-role-php)
+[![Build Status](https://travis-ci.org/labpositiva/ansible-role-php.svg)](https://travis-ci.org/labpositiva/ansible-role-php)
+[![GitHub issues](https://img.shields.io/github/issues/labpositiva/ansible-role-php.svg)](https://github.com/labpositiva/ansible-role-php/issues)
 [![GitHub license](https://img.shields.io/github/license/mashape/apistatus.svg?style=flat-square)](LICENSE)
-</span>
 
 
 ```bash
-$ ansible-galaxy install hadenlabs.php
+$ ansible-galaxy install labpositiva.php
 
 ```
+
 Requirements
 ------------
 
-None
+ - Linux
+   - none
+ - OSX
+   - none
 
 
 
@@ -23,16 +26,16 @@ Here is the list of all variables and their default values:
 
 ```yaml
     ---
-    # defaults file for hadenlabs.php
-    php_version: 7
+    # defaults file for labpositiva.php
+    php_version: 7.0
     php_modules: []
     php_pecl_extensions: []
 ```
 
-
 ## Dependencies
 
-none
+None
+
 
 ## Example Playbook
 
@@ -43,10 +46,10 @@ To run this playbook with default settings, create a basic playbook like this:
 ```yaml
     - hosts: servers
       roles:
-        - hadenlabs.php
-          php_version: 7
+        - labpositiva.php
+          php_version: 7.0
           php_modules:
-            - php5-cli
+            - php7.0-cli
           php_pecl_extensions:
           - xdebug
           - zendopcache
@@ -66,14 +69,12 @@ Please see [CONTRIBUTING](CONTRIBUTING.md) for details.
 
 ## Credits
 
-- [author][link-author]
+Made with :heart: ️:coffee:️ and :pizza: by [labpositiva][link-company].
+
 - [All Contributors][link-contributors]
 
 
 ---
-Copyright © 2016, hadenlabs
-
-<!-- Other -->
 
 [link-author]: https://github.com/luismayta
 [link-contributors]: contributors

@@ -3,8 +3,8 @@
 galaxy_info:
   author: Luis Mayta
   description: This Ansible Role infuses antigravity, you are warned
-  company: hadenlabs
-  version: 0.0.4
+  company: labpositiva
+  version: 0.0.5
   license: Mit
   min_ansible_version: 1.6
   platforms:

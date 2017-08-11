@@ -1,6 +1,6 @@
 ---
 
-# task file for hadenlabs.php
+# task file for labpositiva.php
 
 - name: Update package repositories
   sudo: yes
