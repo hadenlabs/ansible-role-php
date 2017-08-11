@@ -1,8 +1,8 @@
 ---
 
-# vars file for hadenlabs.php
+# vars file for labpositiva.php
 
-# _hadenlabs.php_create_files:
+# _labpositiva.php_create_files:
 #   - path: "{{ _path_dir }}"
 #     state: "directory"
 #     # group: "root"
@@ -27,7 +27,7 @@ _php_modules_defaults:
   - "{{ _php_version }}-dev"
 
 
-# _hadenlabs.php:
+# _labpositiva.php:
 #   templates:
 #     - src: "default.j2"
-#       dest: {{ _hadenlabs.php_file }}
+#       dest: {{ _labpositiva.php_file }}
