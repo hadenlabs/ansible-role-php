@@ -2,8 +2,9 @@
 All notable changes to this project will be documented in this file.
 This file uses change log convention from [Keep a CHANGELOG](http://keepachangelog.com).
 
-## [Unreleased][unreleased]
+## [Unreleased]
 
+## [0.0.4] - 2017-08-03
 
 [unreleased]: https://github.com/labpositiva/anisble-role-php/compare/0.0.4...HEAD
 [0.0.4]: https://github.com/labpositiva/anisble-role-php/compare/0.0.3...0.0.4
