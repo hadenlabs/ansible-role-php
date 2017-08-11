@@ -2,6 +2,6 @@
 - hosts: localhost
   connection: local
   vars:
-    example_var: {'key': 'value'}
+    example_var: { 'key': 'value' }
   roles:
     - {role: labpositiva.php  }
