@@ -4,6 +4,8 @@ This file uses change log convention from [Keep a CHANGELOG](http://keepachangel
 
 ## [Unreleased]
 
+## [0.0.5] - 2017-08-11
+
 ## [0.0.4] - 2017-08-03
 
 [unreleased]: https://github.com/labpositiva/anisble-role-php/compare/0.0.4...HEAD
