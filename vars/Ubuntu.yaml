@@ -1,5 +1,5 @@
 ---
-# vars file for hadenlabs.php (Ubuntu specific)
+# vars file for labpositiva.php (Ubuntu specific)
 
 _php_version: "php{{ php_version }}"
 
